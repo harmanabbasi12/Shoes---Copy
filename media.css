@@ -1,0 +1,941 @@
+/* =====================================
+   RESPONSIVE CSS - VELTRIX SHOE WEBSITE
+   Paste at the END of your existing CSS
+===================================== */
+
+/* 1. Global responsive fixes */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* 2. Navigation */
+nav {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 15px 20px;
+    position: relative;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 85px;
+    height: 85px;
+    left: 20px;
+    top: 5px;
+    z-index: 2;
+}
+
+.my-search,
+.fa-user,
+.my-cart {
+    top: 40px;
+}
+
+.my-search {
+    right: 115px;
+}
+
+.fa-user {
+    right: 70px;
+}
+
+.my-cart {
+    right: 25px;
+}
+
+/* 3. Hero section */
+.backpic {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blackpaper {
+    width: 100%;
+}
+
+.txtcontainer1 {
+    max-width: calc(100% - 40px);
+}
+
+.txtcontainer2 {
+    left: auto;
+    right: 8%;
+}
+
+/* 4. Shoe categories */
+.container3 {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px 20px;
+}
+
+.lists,
+.lists2,
+.lists3,
+.lists4,
+.lists5 {
+    width: 160px;
+    max-width: 100%;
+    flex: 0 1 160px;
+}
+
+/* 5. Featured products heading */
+.container4 {
+    width: 100%;
+    height: auto;
+    min-height: 75px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.centertext {
+    font-size: clamp(22px, 3vw, 32pt);
+    left: 25px;
+}
+
+.centertext2 {
+    position: static;
+}
+
+.my-arrow6 {
+    position: static;
+}
+
+/* 6. Product cards */
+.container5 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    padding: 20px 25px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 200px));
+    justify-content: center;
+    gap: 25px;
+}
+
+.pics,
+.pics2,
+.pics3,
+.pics4,
+.pics5,
+.pics6 {
+    width: 100%;
+    min-width: 0;
+    height: 280px;
+    position: relative;
+    background-size: 150px 100px;
+    background-position: center 10px;
+}
+
+.picbox {
+    width: calc(100% - 30px);
+    max-width: 160px;
+    left: 15px;
+}
+
+.pictext {
+    font-size: 13px;
+}
+
+.pictext3 {
+    font-size: 13px;
+}
+
+.pictext4 {
+    left: 95px;
+    white-space: nowrap;
+}
+
+.picbutton {
+    width: 100%;
+}
+
+/* 7. Sale banner */
+.container6 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    padding: 25px;
+}
+
+.backpic2 {
+    width: 100%;
+    max-width: 1400px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.backtext {
+    width: min(500px, calc(100% - 40px));
+    max-width: 100%;
+    left: 35px;
+}
+
+/* 8. Footer divider */
+.line {
+    width: 100%;
+    position: relative;
+    top: 0;
+    margin-top: 20px;
+}
+
+/* 9. Footer */
+.container7 {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    position: relative;
+    top: 0;
+    padding: 30px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.logo2 {
+    left: 0;
+    flex: 0 1 200px;
+}
+
+.centerbar,
+.centerbar2,
+.endbar {
+    flex: 0 1 200px;
+    min-width: 0;
+}
+
+.endbar input {
+    max-width: 100%;
+}
+
+.my-arrow8 {
+    right: -25px;
+}
+
+.cbartext9 {
+    right: -25px;
+}
+
+/* =====================================
+   TABLETS - 768px to 1024px
+===================================== */
+@media (max-width: 1024px) {
+
+    nav {
+        padding: 100px 20px 20px;
+    }
+
+    .logo {
+        top: 5px;
+        left: 20px;
+        width: 75px;
+        height: 75px;
+    }
+
+    nav ul {
+        gap: 18px 25px;
+    }
+
+    .backpic {
+        background-position: center;
+    }
+
+    .txtcontainer1 {
+        left: 40px;
+    }
+
+    .txtcontainer2 {
+        right: 5%;
+    }
+
+    .container3 {
+        gap: 35px 15px;
+    }
+
+    .container5 {
+        grid-template-columns: repeat(3, minmax(0, 200px));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .container6 {
+        padding: 20px;
+    }
+
+    .container7 {
+        gap: 25px;
+        justify-content: space-around;
+    }
+}
+
+/* =====================================
+   MOBILE - 768px and below
+===================================== */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        padding: 90px 12px 20px;
+        min-height: 150px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+        left: 12px;
+        top: 5px;
+    }
+
+    .my-search {
+        right: 95px;
+        top: 25px;
+    }
+
+    .fa-user {
+        right: 55px;
+        top: 25px;
+    }
+
+    .my-cart {
+        right: 15px;
+        top: 25px;
+    }
+
+    nav ul {
+        width: 100%;
+        gap: 15px 20px;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .backpic {
+        height: 430px;
+        background-position: center;
+    }
+
+    .blackpaper {
+        height: 100%;
+    }
+
+    .txtcontainer1 {
+        left: 25px;
+        top: 75px;
+        width: 65%;
+        max-width: 65%;
+    }
+
+    .txt2,
+    .txt3,
+    .txt4 {
+        font-size: clamp(22px, 5vw, 32pt);
+    }
+
+    .txt4 {
+        left: 150px;
+    }
+
+    .txt5 {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .txt6 {
+        top: 200px;
+        width: 140px;
+        height: 45px;
+    }
+
+    .txtcontainer2 {
+        top: 270px;
+        right: 20px;
+        left: auto;
+        width: 100px;
+    }
+
+    .text2 {
+        font-size: 35pt;
+    }
+
+    /* Categories */
+    .container3 {
+        padding: 25px 12px;
+        gap: 35px 12px;
+    }
+
+    .lists,
+    .lists2,
+    .lists3,
+    .lists4,
+    .lists5 {
+        flex: 0 1 calc(33.333% - 12px);
+        min-width: 95px;
+        height: 100px;
+    }
+
+    .name,
+    .name2,
+    .name3,
+    .name4,
+    .name5 {
+        white-space: nowrap;
+        font-size: 11px;
+        top: 80px;
+    }
+
+    /* Featured heading */
+    .container4 {
+        padding: 15px;
+        min-height: 70px;
+    }
+
+    .centertext {
+        font-size: clamp(19px, 4vw, 28px);
+        left: 15px;
+    }
+
+    .centertext2 {
+        font-size: 12px;
+    }
+
+    /* Products: two cards per row */
+    .container5 {
+        grid-template-columns: repeat(2, minmax(0, 200px));
+        gap: 20px 12px;
+        padding: 20px 12px;
+    }
+
+    .pics,
+    .pics2,
+    .pics3,
+    .pics4,
+    .pics5,
+    .pics6 {
+        height: 270px;
+    }
+
+    .picbox {
+        top: 100px;
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+
+    .pictext {
+        font-size: 12px;
+    }
+
+    .pictext2 {
+        font-size: 9px;
+    }
+
+    .pictext3 {
+        font-size: 12px;
+    }
+
+    .pictext4 {
+        font-size: 8px;
+        left: auto;
+        right: 0;
+    }
+
+    .my-star,
+    .my-star2,
+    .my-star3,
+    .my-star4,
+    .my-star5 {
+        font-size: 9px;
+    }
+
+    .picbutton {
+        font-size: 12px;
+    }
+
+    /* Sale banner */
+    .container6 {
+        padding: 15px 12px;
+    }
+
+    .backpic2 {
+        height: 190px;
+        background-position: center;
+    }
+
+    .backtext {
+        left: 15px;
+        top: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .font {
+        font-size: 13px;
+    }
+
+    .font2 {
+        font-size: clamp(18px, 4vw, 25px);
+        max-width: 100%;
+    }
+
+    .font3 {
+        font-size: 10px;
+        max-width: 90%;
+    }
+
+    .font4 {
+        top: 35px;
+    }
+
+    /* Footer */
+    .container7 {
+        padding: 25px 20px;
+        gap: 25px;
+        justify-content: space-between;
+    }
+
+    .logo2,
+    .centerbar,
+    .centerbar2,
+    .endbar {
+        flex: 1 1 calc(50% - 25px);
+        width: auto;
+        max-width: 100%;
+    }
+
+    .endbar input {
+        width: 100%;
+    }
+
+    .my-arrow8 {
+        right: -5px;
+    }
+
+    .cbartext9 {
+        right: -5px;
+        white-space: nowrap;
+        font-size: 7px;
+    }
+}
+
+/* =====================================
+   SMALL PHONES - 480px and below
+===================================== */
+@media (max-width: 480px) {
+
+    nav {
+        padding: 85px 8px 18px;
+    }
+
+    .logo {
+        width: 58px;
+        height: 58px;
+        left: 8px;
+    }
+
+    nav ul {
+        gap: 14px 15px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .my-search {
+        right: 83px;
+        font-size: 14px;
+    }
+
+    .fa-user {
+        right: 48px;
+        font-size: 14px;
+    }
+
+    .my-cart {
+        right: 12px;
+        font-size: 14px;
+    }
+
+    .backpic {
+        height: 400px;
+    }
+
+    .txtcontainer1 {
+        top: 65px;
+        left: 16px;
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .txt {
+        font-size: 10px;
+    }
+
+    .txt2,
+    .txt3,
+    .txt4 {
+        font-size: 22px;
+    }
+
+    .txt3,
+    .txt4 {
+        top: 55px;
+    }
+
+    .txt4 {
+        left: 135px;
+    }
+
+    .txt5 {
+        top: 105px;
+        font-size: 10px;
+    }
+
+    .txt6 {
+        top: 175px;
+        width: 125px;
+        height: 40px;
+    }
+
+    .txtcontainer2 {
+        top: 265px;
+        right: 12px;
+        transform: scale(0.85);
+        transform-origin: top right;
+    }
+
+    .container3 {
+        gap: 32px 10px;
+        padding: 20px 8px;
+    }
+
+    .lists,
+    .lists2,
+    .lists3,
+    .lists4,
+    .lists5 {
+        flex: 0 1 calc(33.333% - 10px);
+        min-width: 0;
+        height: 90px;
+        background-size: 75px 50px;
+    }
+
+    .name,
+    .name2,
+    .name3,
+    .name4,
+    .name5 {
+        top: 70px;
+        font-size: 10px;
+    }
+
+    .my-arrow,
+    .my-arrow2,
+    .my-arrow3,
+    .my-arrow4,
+    .my-arrow5 {
+        left: auto;
+        right: -15px;
+        font-size: 10px;
+    }
+
+    .container4 {
+        min-height: 60px;
+        gap: 8px;
+        padding: 12px 8px;
+    }
+
+    .centertext {
+        left: 8px;
+        font-size: 19px;
+        white-space: nowrap;
+    }
+
+    .centertext2 {
+        font-size: 10px;
+    }
+
+    .container5 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px 10px;
+        padding: 15px 10px;
+    }
+
+    .pics,
+    .pics2,
+    .pics3,
+    .pics4,
+    .pics5,
+    .pics6 {
+        height: 255px;
+        background-size: 125px 85px;
+    }
+
+    .picbox {
+        top: 85px;
+        width: calc(100% - 16px);
+        left: 8px;
+    }
+
+    .pictext {
+        font-size: 11px;
+    }
+
+    .pictext3 {
+        font-size: 11px;
+    }
+
+    .pictext4 {
+        font-size: 7px;
+    }
+
+    .my-star,
+    .my-star2,
+    .my-star3,
+    .my-star4,
+    .my-star5 {
+        font-size: 8px;
+    }
+
+    .my-star2 {
+        left: 14px;
+    }
+
+    .my-star3 {
+        left: 28px;
+    }
+
+    .my-star4 {
+        left: 42px;
+    }
+
+    .my-star5 {
+        left: 56px;
+    }
+
+    .icontext {
+        left: 75px;
+        font-size: 8px;
+    }
+
+    .picbutton {
+        top: 100px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .pic-cart {
+        left: 8px;
+        font-size: 9px;
+    }
+
+    .backpic2 {
+        height: 180px;
+    }
+
+    .backtext {
+        left: 12px;
+        width: calc(100% - 24px);
+    }
+
+    .font {
+        font-size: 11px;
+    }
+
+    .font2 {
+        font-size: 18px;
+    }
+
+    .font3 {
+        font-size: 9px;
+        top: 65px;
+    }
+
+    .font4 {
+        top: 35px;
+        width: 110px;
+        height: 35px;
+        font-size: 11px;
+    }
+
+    .my-arrow7 {
+        left: 88px;
+        top: 11px;
+    }
+
+    .container7 {
+        padding: 20px 15px;
+        gap: 25px 12px;
+    }
+
+    .logo2,
+    .centerbar,
+    .centerbar2,
+    .endbar {
+        flex: 1 1 calc(50% - 12px);
+        min-width: 0;
+    }
+
+    .logo2 {
+        background-size: 80px 80px;
+    }
+
+    .pictext6,
+    .pictext7 {
+        font-size: 7px;
+    }
+
+    .cbartext {
+        font-size: 11px;
+    }
+
+    .cbartext2,
+    .cbartext3,
+    .cbartext4,
+    .cbartext5,
+    .cbartext6,
+    .cbartext7 {
+        font-size: 9px;
+    }
+
+    .endbar input {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    .my-arrow8 {
+        top: 80px;
+        right: -5px;
+        padding: 9px;
+    }
+
+    .cbartext9 {
+        top: 140px;
+        right: -5px;
+        font-size: 6px;
+    }
+}
+
+/* =====================================
+   VERY SMALL PHONES - 360px and below
+===================================== */
+@media (max-width: 360px) {
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .centertext {
+        font-size: 17px;
+    }
+
+    .container5 {
+        gap: 12px 8px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .pics,
+    .pics2,
+    .pics3,
+    .pics4,
+    .pics5,
+    .pics6 {
+        height: 245px;
+        background-size: 110px 80px;
+    }
+
+    .pictext {
+        font-size: 10px;
+    }
+
+    .pictext3 {
+        font-size: 10px;
+    }
+
+    .pictext4 {
+        display: none;
+    }
+
+    .container7 {
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 20px 8px;
+    }
+}
+
+/* 10. Accessibility: reduce motion if requested */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+}
